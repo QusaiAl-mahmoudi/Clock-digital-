@@ -1,0 +1,30 @@
+package main;
+import java .util.Scanner;
+public class Hour {
+    public static void main(String[] args) {
+        int h,m,s;
+     Scanner in=new Scanner(System.in) ;
+      System.out.print("Enter Hour Now : ") ; 
+         h=in.nextInt();
+        System.out.print("Enter Menuts Now : ") ; 
+        m =in.nextInt();
+        while(true){//حلقة لعدد  لانهائية للايام
+            for (int H=h;H<=12;H++) {
+            for(int M=m;M<60;M++){
+            for(int S=1;S<60;S++){
+            System.out.print("\r\r\r\r\r");
+            System.out.print(H+":"+M+":"+S);
+                try{Thread.sleep(1000);// انتظر لمدة ثانية واحدة بين التحديثات التواني 
+                }catch(InterruptedException
+                e){e.printStackTrace();}
+            }
+                m=0;//اعادة تعين الدقائق الى قيمة اولية بعد كل ساعة
+            }
+                h=1; // ساعة 24اعادة تعين الساعات الى قيمة الاولية بعد كل
+        } 
+    }
+    }
+}
+
+
+ 
